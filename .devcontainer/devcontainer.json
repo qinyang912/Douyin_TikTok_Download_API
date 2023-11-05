@@ -4,7 +4,6 @@
     "dockerFile": "../Dockerfile.dev",
     "postCreateCommand": "script/setup",
     "containerEnv": { "DEVCONTAINER": "1" },
-    "appPort": ["8000:8000", "80:80"],
     "runArgs": ["-e", "GIT_EDITOR=code --wait"],
     "customizations": {
       "vscode": {
