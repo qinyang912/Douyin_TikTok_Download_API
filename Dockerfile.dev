@@ -12,6 +12,5 @@ COPY requirements.txt ./
 
 RUN pip3 --no-cache-dir install --user -r requirements.txt
 
-RUN chmod +x start.sh && \
-    apt-get autoremove -y \
+RUN apt-get autoremove -y \
     && apt-get remove -y python3-pip
